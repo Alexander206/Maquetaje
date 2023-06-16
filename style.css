@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para header */
+
+header {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__contLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: #0071b1;
+  color: #fff;
+}
+
+.logo {
+  margin-top: 10px;
+  width: 60px;
+}
+
+.logoText {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+header div:nth-child(2) h2 {
+  color: #0071b1;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+header div:nth-child(2) h4 {
+  color: #0071b1;
+  font-weight: normal;
+  margin-left: 30px;
+}
+
+.header__title {
+  position: absolute;
+  right: 0;
+}
+
+.header__title h1 {
+  display: inline-block;
+  color: #0071b1;
+  font-size: 22px;
+  margin: 23px;
+}
+
+/* Estilos para main */
+
+/* Section bannerInscripcion general */
+
+.bannerInscripcion {
+  display: flex;
+}
+
+/* Section banner */
+
+.bannerIzquierda {
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80vw;
+  background-image: url(./assets/fondo.jpg);
+  background-size: cover;
+}
+
+.banner {
+  align-self: flex-end;
+  margin-bottom: 60px;
+}
+
+.banner__title {
+  font-weight: 400;
+  color: #0071b1;
+  font-size: 38px;
+}
+
+.banner__title span {
+  color: #e46f40;
+}
+
+.banner__separador {
+  width: 280px;
+  height: 2px;
+  background-color: #0071b1;
+}
+
+.banner__text {
+  color: #e46f40;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  margin-right: 70px;
+}
+
+.banner__nav {
+  background-color: #0070b17c;
+  width: 100%;
+  height: 80px;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner__nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__nav ul li:nth-child(4) {
+  height: 80px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: #e46f40;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner__nav ul img {
+  width: 20px;
+  margin: 0 12px;
+}
+
+/* Section inscripción */
+
+.inscribirse {
+  padding: 10px 0;
+  width: 350px;
+  background-color: #0071b1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.inscribirse h3 {
+  color: #fff;
+  font-size: 22px;
+}
+
+.inscribirse h3 span {
+  color: #e65a24;
+}
+
+.inscribirse__separador img {
+  width: 200px;
+}
+
+#formulario label input {
+  width: 250px;
+  height: 30px;
+  padding-left: 20px;
+  margin: 3px 0;
+}
+
+#formulario label input::placeholder {
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+.btnEnviar {
+  width: 200px;
+  height: 40px;
+  background-color: #e65a24;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btnEnviar:hover {
+  background-color: #e46f40;
+  transition: 0.1s;
+}
+
+/* Section espacio libre */
+
+.libre {
+  width: 100%;
+  height: 160px;
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+}
+
+.libre img {
+  margin: 0 40px;
+  width: 70px;
+}
+
+.libre h3 {
+  color: #0071b1;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+/* card section */
+
+.section__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section__card .card {
+  align-self: flex-start;
+  margin: 15px;
+  border: 1px solid #c1c1c1;
+}
+
+.section__card .card h4 {
+  margin: 15px;
+  font-size: 18px;
+  color: #0071b1;
+  font-weight: bold;
+}
+
+.section__card .card p {
+  margin: 15px;
+  font-size: 13px;
+}
+
+.card:nth-child(4) h4 {
+  color: #e46f40;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #c1c1c1;
+}
+
+.footer__contacto {
+  background-color: #0071b1;
+  color: #fff;
+  width: 45vw;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.lista__footer {
+  list-style: none;
+  display: flex;
+}
+
+.lista__footer a {
+  color: #fff;
+  display: flex;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.img__footer {
+  margin: 0 5px;
+  width: 24px;
+}
+
+.footer__superior div:nth-child(2) {
+  background-color: #c1c1c1;
+  color: #0071b1;
+  width: 55vw;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.footer__inferior {
+  background-color: #4d4d4d;
+  color: #fff;
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .header__text {
+    width: 100%;
+  }
+
+  .header__title {
+    display: none;
+    position: absolute;
+    left: 100vw;
+  }
+
+  /*  .banner {
+    width: 350px;
+  } */
+
+  .bannerInscripcion {
+    flex-direction: column;
+  }
+
+  .bannerIzquierda {
+    width: 100vw;
+  }
+
+  .banner__title {
+    margin: 20px 40px;
+    text-align: right;
+    font-size: 28px;
+  }
+
+  .banner__separador {
+    width: 180px;
+    position: absolute;
+    right: 20px;
+  }
+
+  .banner__text {
+    margin: 30px 40px;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .lista {
+    font-size: 11px;
+  }
+
+  .inscribirse {
+    width: 100vw;
+    padding: 20px 0;
+  }
+
+  .section__card {
+    flex-direction: column;
+  }
+
+  .lista__footer {
+    flex-direction: column;
+  }
+
+  .lista__footer li {
+    margin: 10px 0;
+  }
+
+  .footer__superior div:nth-child(2) {
+    height: 100%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 650px) {
+  .header__title {
+    width: 40vw;
+  }
+
+  .bannerIzquierda {
+    width: 65vw;
+  }
+
+  .banner__title {
+    padding: 20px;
+    text-align: right;
+    font-size: 28px;
+  }
+
+  .banner__separador {
+    width: 180px;
+    position: relative;
+    right: -50px;
+  }
+
+  .banner__text {
+    margin: 20px;
+    text-align: right;
+    font-size: 20px;
+  }
+
+  .lista {
+    font-size: 11px;
+  }
+
+  .inscribirse {
+    width: 35vw;
+    padding: 20px 0;
+  }
+
+  #formulario label input {
+    width: 200px;
+    margin: 5px 10px;
+  }
+  .section__card {
+    flex-direction: column;
+  }
+
+  .lista__footer {
+    flex-direction: column;
+  }
+
+  .lista__footer li {
+    margin: 10px 0;
+  }
+
+  .footer__superior div:nth-child(2) {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .bannerInscripcion {
+    height: 60vh;
+  }
+
+  .section__card .card {
+    width: 22vw;
+    min-height: 18rem;
+  }
+  .banner__separador {
+    width: 260px;
+    margin: 20px;
+  }
+  #formulario label input {
+    margin: 10px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bannerInscripcion {
+    height: 700px;
+  }
+
+  .bannerIzquierda {
+    justify-content: space-between;
+  }
+
+  .banner__title {
+    text-align: center;
+    margin: 50px 70px;
+    font-size: 3rem;
+  }
+
+  .banner__separador {
+    position: relative;
+    right: -10vw;
+  }
+
+  .banner__text {
+    margin: 30px 40px;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .inscribirse {
+    width: 25vw;
+    padding: 20px 0;
+  }
+
+  #formulario label input {
+    margin: 10px 0px;
+  }
+  .section__card .card {
+    width: 22vw;
+    min-height: 18rem;
+  }
+}
